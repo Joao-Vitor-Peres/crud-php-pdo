@@ -1,0 +1,10 @@
+CREATE SCHEMA IF NOT EXISTS `crudpdo` DEFAULT CHARACTER SET utf8 ;
+USE `crudpdo` ;
+
+CREATE TABLE IF NOT EXISTS `crudpdo`.`pessoa` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(45) NULL,
+  `telefone` INT(11) NULL,
+  `email` VARCHAR(45),
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
